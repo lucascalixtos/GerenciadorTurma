@@ -1,0 +1,6 @@
+@GerenciadorTurma_HostAddress = http://localhost:5052
+
+GET {{GerenciadorTurma_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
