@@ -8,6 +8,7 @@ using Dapper;
 using GerenciadorTurma.Domain.Entities;
 using GerenciadorTurma.Domain.Interfaces.Data.Repositories;
 using GerenciadorTurma.Domain.Interfaces.Infra;
+using GerenciadorTurma.Service.Aluno.DTOs;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
@@ -28,7 +29,6 @@ namespace GerenciadorTurma.Infra.Data.Repositories
                 var conexao = _dbConnectionFactory.CriarConexao();
                 string query = "select * from aluno where Id=@id";
                 return conexao.Query<Aluno>(query, new {Id = id}).FirstOrDefault();
-
             }
             catch (Exception e)
             {
@@ -52,13 +52,46 @@ namespace GerenciadorTurma.Infra.Data.Repositories
 
         public Aluno DeletarAluno(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var conexao = _dbConnectionFactory.CriarConexao();
+                string query = "delete from aluno where Id=@id";
+                return conexao.Query<Aluno>(query, new { Id = id }).FirstOrDefault();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
-        public Aluno EditarAluno(int id)
+        public List<Aluno> BuscarTodosAlunos()
         {
-            throw new NotImplementedException();
+            try
+            {
+                var conexao = _dbConnectionFactory.CriarConexao();
+                string query = "select * from aluno";
+                return conexao.Query<Aluno>(query).ToList();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
+        public void EditarAluno(EditarAlunoRequest aluno)
+        {
+            try
+            {
+                var conexao = _dbConnectionFactory.CriarConexao();
+                string query = "update aluno " +
+                    "set nome = @nome, usuario = @usuario" +
+                    " where id = @id";
+                var retorno = conexao.Execute(query, aluno);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
     }
 }

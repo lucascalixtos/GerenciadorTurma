@@ -5,6 +5,7 @@ using GerenciadorTurma.Infra.CrossCutting.Middleware;
 using GerenciadorTurma.Infra.Data;
 using GerenciadorTurma.Infra.Data.Repositories;
 using GerenciadorTurma.Service;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -16,8 +17,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient();
 
 builder.Services.AddTransient<IDbConnectionFactory, DbConnectionFactory>();
+
 builder.Services.AddTransient<IAlunoRepository, AlunoRepository>();
 builder.Services.AddTransient<IAlunoService, AlunoService>();
+
+builder.Services.AddTransient<ITurmaRepository, TurmaRepository>();
+builder.Services.AddTransient<ITurmaService, TurmaService>();
 
 var app = builder.Build();
 
@@ -28,7 +33,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseMiddleware(typeof(GerarErrosMiddleware));
+//app.UseMiddleware(typeof(GerarErrosMiddleware));
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

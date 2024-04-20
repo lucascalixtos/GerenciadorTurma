@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\GerenciadorTurma.Infra.CrossCutting\GerenciadorTurma.Infra.CrossCutting.csproj" />
   </ItemGroup>
 

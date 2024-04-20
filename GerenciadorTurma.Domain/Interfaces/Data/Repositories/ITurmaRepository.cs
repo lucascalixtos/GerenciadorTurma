@@ -8,13 +8,12 @@ using System.Threading.Tasks;
 
 namespace GerenciadorTurma.Domain.Interfaces.Data.Repositories
 {
-    public interface IAlunoRepository
+    public interface ITurmaRepository
     {
-        void CriarAluno(Aluno aluno);
-        Aluno BuscarAluno(int id);
-        Aluno DeletarAluno(int id);
-        void EditarAluno(EditarAlunoRequest aluno);
-        List<Aluno> BuscarTodosAlunos();
-
+        void CriarTurma(Turma aluno);
+        Aluno BuscarTurma(int id);
+        Aluno DeletarTurma(int id);
+        void EditarTurma(EditarTurmaRequest aluno);
+        List<Turma> BuscarTodasTurmas();
     }
 }

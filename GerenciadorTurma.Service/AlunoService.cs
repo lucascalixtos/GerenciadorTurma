@@ -2,29 +2,44 @@
 using GerenciadorTurma.Domain.Interfaces.Data.Repositories;
 using GerenciadorTurma.Domain.Interfaces.Services;
 using GerenciadorTurma.Infra.Data.Repositories;
+using GerenciadorTurma.Service.Aluno.DTOs;
 using System.Security.Cryptography;
 using BCryptNet = BCrypt.Net.BCrypt;
 
 namespace GerenciadorTurma.Service
 {
-    public class AlunoService: IAlunoService
+    public class AlunoService : IAlunoService
     {
         private readonly IAlunoRepository _alunoRepository;
-        public AlunoService(IAlunoRepository alunoRepository) {
+        public AlunoService(IAlunoRepository alunoRepository)
+        {
             _alunoRepository = alunoRepository;
         }
 
-        public Aluno BuscarAluno(int id)
+        public Domain.Entities.Aluno BuscarAluno(int id)
         {
             return _alunoRepository.BuscarAluno(id);
         }
 
-        public  void CriarAluno(Aluno aluno)
+        public void CriarAluno(Domain.Entities.Aluno aluno)
         {
             aluno.senha = CriptografarSenha(aluno.senha);
             _alunoRepository.CriarAluno(aluno);
         }
 
+        public Domain.Entities.Aluno DeletarAluno(int id)
+        {
+            return _alunoRepository.DeletarAluno(id);
+        }
+
+        public List<Domain.Entities.Aluno> BuscarTodosAlunos()
+        {
+            return _alunoRepository.BuscarTodosAlunos();
+        }
+        public void EditarAluno(EditarAlunoRequest aluno)
+        {
+            _alunoRepository.EditarAluno(aluno);
+        }
 
         private string CriptografarSenha(string senha)
         {
@@ -37,5 +52,6 @@ namespace GerenciadorTurma.Service
             bool senhaCorreta = BCryptNet.Verify(senha, senhaCriptograda);
             return senhaCorreta;
         }
+
     }
 }
