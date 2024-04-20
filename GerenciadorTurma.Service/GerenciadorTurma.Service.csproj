@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="Dapper" Version="2.1.35" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GerenciadorTurma.Infra.CrossCutting\GerenciadorTurma.Infra.CrossCutting.csproj" />
+    <ProjectReference Include="..\GerenciadorTurma.Infra.Data\GerenciadorTurma.Infra.Data.csproj" />
+	<ProjectReference Include="..\GerenciadorTurma.Domain\GerenciadorTurma.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

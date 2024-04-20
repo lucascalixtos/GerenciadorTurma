@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GerenciadorTurma.Infra.CrossCutting\GerenciadorTurma.Infra.CrossCutting.csproj" />
+    <Folder Include="Entities\" />
   </ItemGroup>
 
 </Project>

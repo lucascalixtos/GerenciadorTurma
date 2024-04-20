@@ -4,16 +4,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorTurma", "GerenciadorTurma\GerenciadorTurma.csproj", "{B4B65F01-E354-4EA7-B3AD-3059E0EF5EDF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6A3D1B38-C470-4AB0-9D31-FF7DECAECB0C} = {6A3D1B38-C470-4AB0-9D31-FF7DECAECB0C}
+		{D8A6C6AD-435D-4E0B-87D6-BF14C994BDA0} = {D8A6C6AD-435D-4E0B-87D6-BF14C994BDA0}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{5050A972-B0A4-4DDD-BF7B-1CA5F089DB27}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{DA3350EC-AAF3-461C-A012-0469E4696AF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorTurma.Domain", "GerenciadorTurma.Domain\GerenciadorTurma.Domain.csproj", "{CA46265E-3595-4B04-B16D-7A974B38FDCC}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Service", "3 - Service", "{57B1FF24-8D67-409F-84D0-635CD990DAF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorTurma.Service", "GerenciadorTurma.Service\GerenciadorTurma.Service.csproj", "{159E0FBE-698E-4957-976F-62A7ECC34026}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorTurma.Service", "GerenciadorTurma.Service\GerenciadorTurma.Service.csproj", "{159E0FBE-698E-4957-976F-62A7ECC34026}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{70D0743D-FFAE-435E-923F-834E871B54CD}"
 EndProject
@@ -21,9 +23,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{C146E89C-636E-4384-A59F-7969DD810B58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorTurma.Infra.Data", "GerenciadorTurma.Infra.Data\GerenciadorTurma.Infra.Data.csproj", "{6A3D1B38-C470-4AB0-9D31-FF7DECAECB0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorTurma.Infra.Data", "GerenciadorTurma.Infra.Data\GerenciadorTurma.Infra.Data.csproj", "{6A3D1B38-C470-4AB0-9D31-FF7DECAECB0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorTurma.Infra.CrossCutting", "GerenciadorTurma.Infra.CrossCutting\GerenciadorTurma.Infra.CrossCutting.csproj", "{D8A6C6AD-435D-4E0B-87D6-BF14C994BDA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorTurma.Infra.CrossCutting", "GerenciadorTurma.Infra.CrossCutting\GerenciadorTurma.Infra.CrossCutting.csproj", "{D8A6C6AD-435D-4E0B-87D6-BF14C994BDA0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorTurma.Domain", "GerenciadorTurma.Domain\GerenciadorTurma.Domain.csproj", "{CE14AF22-A190-46CC-9A78-2ECB746E88A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +39,6 @@ Global
 		{B4B65F01-E354-4EA7-B3AD-3059E0EF5EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4B65F01-E354-4EA7-B3AD-3059E0EF5EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4B65F01-E354-4EA7-B3AD-3059E0EF5EDF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CA46265E-3595-4B04-B16D-7A974B38FDCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CA46265E-3595-4B04-B16D-7A974B38FDCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CA46265E-3595-4B04-B16D-7A974B38FDCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CA46265E-3595-4B04-B16D-7A974B38FDCC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{159E0FBE-698E-4957-976F-62A7ECC34026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{159E0FBE-698E-4957-976F-62A7ECC34026}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{159E0FBE-698E-4957-976F-62A7ECC34026}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,18 +51,22 @@ Global
 		{D8A6C6AD-435D-4E0B-87D6-BF14C994BDA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8A6C6AD-435D-4E0B-87D6-BF14C994BDA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8A6C6AD-435D-4E0B-87D6-BF14C994BDA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE14AF22-A190-46CC-9A78-2ECB746E88A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE14AF22-A190-46CC-9A78-2ECB746E88A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE14AF22-A190-46CC-9A78-2ECB746E88A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE14AF22-A190-46CC-9A78-2ECB746E88A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B4B65F01-E354-4EA7-B3AD-3059E0EF5EDF} = {5050A972-B0A4-4DDD-BF7B-1CA5F089DB27}
-		{CA46265E-3595-4B04-B16D-7A974B38FDCC} = {DA3350EC-AAF3-461C-A012-0469E4696AF3}
 		{159E0FBE-698E-4957-976F-62A7ECC34026} = {57B1FF24-8D67-409F-84D0-635CD990DAF9}
 		{9DEE76CF-17AC-45CB-9321-CEB715D83624} = {70D0743D-FFAE-435E-923F-834E871B54CD}
 		{C146E89C-636E-4384-A59F-7969DD810B58} = {70D0743D-FFAE-435E-923F-834E871B54CD}
 		{6A3D1B38-C470-4AB0-9D31-FF7DECAECB0C} = {9DEE76CF-17AC-45CB-9321-CEB715D83624}
 		{D8A6C6AD-435D-4E0B-87D6-BF14C994BDA0} = {C146E89C-636E-4384-A59F-7969DD810B58}
+		{CE14AF22-A190-46CC-9A78-2ECB746E88A4} = {DA3350EC-AAF3-461C-A012-0469E4696AF3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {91C64B20-E6BA-4465-8434-AEB3E419DDAA}
