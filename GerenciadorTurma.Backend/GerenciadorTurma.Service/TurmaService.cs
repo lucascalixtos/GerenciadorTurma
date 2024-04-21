@@ -28,6 +28,7 @@ public class TurmaService: ITurmaService
     public bool CriarTurma(Turma turma)
     {
         _turmaRepository.ValidarAno(turma.Ano);
+        _turmaRepository.ValidarNome(turma.turma);
         return _turmaRepository.CriarTurma(turma);
     }
 

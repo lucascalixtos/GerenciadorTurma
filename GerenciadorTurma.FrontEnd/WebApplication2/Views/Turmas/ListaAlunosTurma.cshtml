@@ -6,21 +6,21 @@
 
 <h1>Turma @Model.Turma.turma.ToString()</h1>
 
-<p>Turma</p>
+<h3>Turma</h3>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Turma.Id)
+                Id
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Turma.turma)
+                Turma
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Turma.Curso_id)
+                Curso Id
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Turma.Ano)
+                Ano
             </th>
             <th></th>
         </tr>
@@ -37,14 +37,17 @@
                 @Html.DisplayFor(model => model.Turma.Curso_id)
             </td>
              <td>
-                  @Html.DisplayNameFor(model => model.Turma.Ano)
+               @Html.DisplayFor(model => model.Turma.Ano)
             </td>
             <td></td>
         </tr>
     </tbody>
 </table>
 
-<p>Alunos cadastrados</p>
+
+<br />
+<br />
+<h3>Alunos cadastrados</h3>
 <table class="table">
     <thead>
         <tr>
@@ -74,7 +77,8 @@
     </tbody>
 </table>
 
-<p>Alunos não cadastrados</p>
+<br /><br />
+<h3>Alunos não cadastrados</h3>
 <table class="table">
     <thead>
         <tr>
@@ -99,6 +103,7 @@
                 </td>
                 <td>
                     <a asp-action="AdicionarAlunoaTurma" asp-route-idAluno="@item.Id" asp-route-idTurma="@Model.Turma.Id">Adicionar a turma</a> |
+                    <a asp-controller="Alunos" asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
                 </td>
             </tr>
         }

@@ -122,15 +122,34 @@ namespace GerenciadorTurma.Infra.Data.Repositories
         {
             try
             {
-                var conexao = _dbConnectionFactory.CriarConexao();
-                string query = "select count(ano) from turma where ano > @ano";
-                bool retorno = conexao.Query<bool>(query, new { ano = ano }).FirstOrDefault();
-                if(retorno)
+                if(ano < DateTime.Now.Year)
                     throw new DadoRecorrenteException(ano);
+                return true;
+            }
+            catch(DadoRecorrenteException ex)
+            {
+                throw ex;
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+        }
+
+        public bool ValidarNome(string nome)
+        {
+            try
+            {
+                var conexao = _dbConnectionFactory.CriarConexao();
+                string query = "select count(turma) from turma where turma = @nome";
+                bool retorno = conexao.Query<bool>(query, new { nome = nome }).FirstOrDefault();
+                if (retorno)
+                    throw new DadoRecorrenteException("Turma", nome);
                 return retorno;
 
             }
-            catch(DadoRecorrenteException ex)
+            catch (DadoRecorrenteException ex)
             {
                 throw ex;
             }

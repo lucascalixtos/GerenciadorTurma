@@ -16,5 +16,6 @@ namespace GerenciadorTurma.Domain.Interfaces.Data.Repositories
         bool EditarTurma(EditarTurmaRequest turma);
         List<Turma> BuscarTodasTurmas();
         bool ValidarAno(int ano);
+        bool ValidarNome(string nome);
     }
 }

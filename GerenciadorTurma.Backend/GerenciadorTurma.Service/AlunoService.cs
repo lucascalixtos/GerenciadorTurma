@@ -1,6 +1,8 @@
 ﻿using GerenciadorTurma.Domain.Entities;
+using GerenciadorTurma.Domain.Extensions;
 using GerenciadorTurma.Domain.Interfaces.Data.Repositories;
 using GerenciadorTurma.Domain.Interfaces.Services;
+using GerenciadorTurma.Infra.CrossCutting.Exceptions;
 using GerenciadorTurma.Infra.Data.Repositories;
 using GerenciadorTurma.Service.Aluno.DTOs;
 using System.Security.Cryptography;
@@ -23,6 +25,9 @@ namespace GerenciadorTurma.Service
 
         public bool CriarAluno(Domain.Entities.Aluno aluno)
         {
+            if (!aluno.ValidarSenhaAluno())
+                throw new SenhaFracaException();
+
             aluno.senha = CriptografarSenha(aluno.senha);
             return _alunoRepository.CriarAluno(aluno);
         }
