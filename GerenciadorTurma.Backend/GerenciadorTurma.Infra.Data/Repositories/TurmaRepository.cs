@@ -123,7 +123,7 @@ namespace GerenciadorTurma.Infra.Data.Repositories
             try
             {
                 var conexao = _dbConnectionFactory.CriarConexao();
-                string query = "select count(ano) from turma where ano = @ano";
+                string query = "select count(ano) from turma where ano > @ano";
                 bool retorno = conexao.Query<bool>(query, new { ano = ano }).FirstOrDefault();
                 if(retorno)
                     throw new DadoRecorrenteException(ano);

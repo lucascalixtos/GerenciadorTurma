@@ -1,10 +1,14 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using GerenciadorTurma.Domain.Interfaces.Data.Repositories;
 using GerenciadorTurma.Domain.Interfaces.Infra;
 using GerenciadorTurma.Domain.Interfaces.Services;
+using GerenciadorTurma.Domain.Validators;
 using GerenciadorTurma.Infra.CrossCutting.Middleware;
 using GerenciadorTurma.Infra.Data;
 using GerenciadorTurma.Infra.Data.Repositories;
 using GerenciadorTurma.Service;
+using Microsoft.AspNetCore.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +19,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient();
+
+builder.Services.AddValidatorsFromAssemblyContaining<AlunoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<AlunoDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<EditarTurmaRequestValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<TurmaValidator>();
+
 
 builder.Services.AddTransient<IDbConnectionFactory, DbConnectionFactory>();
 
