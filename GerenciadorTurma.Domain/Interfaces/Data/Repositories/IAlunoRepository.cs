@@ -13,7 +13,7 @@ namespace GerenciadorTurma.Domain.Interfaces.Data.Repositories
         bool CriarAluno(Aluno aluno);
         Aluno BuscarAluno(int id);
         bool DeletarAluno(int id);
-        bool EditarAluno(EditarAlunoRequest aluno);
+        bool EditarAluno(AlunoDto aluno);
         List<Aluno> BuscarTodosAlunos();
 
     }

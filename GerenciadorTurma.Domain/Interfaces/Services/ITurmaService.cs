@@ -17,6 +17,6 @@ namespace GerenciadorTurma.Domain.Interfaces.Services
         List<Turma> BuscarTodasTurmas();
         bool AdicionarAlunoaTurma(int idAluno, int idTurma);
         bool RemoverAlunoDeTurma(int idAluno, int idTurma);
-        List<EditarAlunoRequest> buscarAlunosEmTurma(int idTurma);
+        AlunoTurma buscarAlunosEmTurma(int idTurma);
     }
 }

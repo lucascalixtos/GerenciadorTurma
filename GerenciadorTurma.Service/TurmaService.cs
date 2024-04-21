@@ -53,8 +53,12 @@ public class TurmaService: ITurmaService
         return _alunoTurmaRepository.RemoverAlunoDeTurma(idAluno, idTurma);
     }
 
-   public List<EditarAlunoRequest> buscarAlunosEmTurma(int idTurma)
+   public AlunoTurma buscarAlunosEmTurma(int idTurma)
     {
-        return _alunoTurmaRepository.buscarAlunosEmTurma(idTurma);
+        AlunoTurma alunoTurma = new AlunoTurma();
+        alunoTurma.Turma = _turmaRepository.BuscarTurma(idTurma);
+        alunoTurma.Alunos = _alunoTurmaRepository.buscarAlunosEmTurma(idTurma);
+        alunoTurma.AlunosForaDaTurma = _alunoTurmaRepository.ObterAlunosForaDaTurma(idTurma);
+        return alunoTurma;
     }
 }

@@ -12,6 +12,7 @@ namespace GerenciadorTurma.Domain.Interfaces.Data.Repositories
         bool AdicionarAlunoaTurma(int idAluno, int idTurma);
         bool VerificarSeAlunoEstaNaTurma(int idAluno, int idTurma);
         bool RemoverAlunoDeTurma(int idAluno, int idTurma);
-        List<EditarAlunoRequest> buscarAlunosEmTurma(int idTurma);
+        List<AlunoDto> buscarAlunosEmTurma(int idTurma);
+        public List<AlunoDto> ObterAlunosForaDaTurma(int idturma);
     }
 }

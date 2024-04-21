@@ -74,6 +74,10 @@ namespace GerenciadorTurma.Infra.Data.Repositories
             try
             {
                 var conexao = _dbConnectionFactory.CriarConexao();
+
+                string queryAlunoTurma = "delete from aluno_turma where turma_id=@id";
+                conexao.Execute(queryAlunoTurma, new { Id = id });
+
                 string query = "delete from turma where Id=@id";
                 var retorno = conexao.Execute(query, new { Id = id });
                 
@@ -97,7 +101,7 @@ namespace GerenciadorTurma.Infra.Data.Repositories
             {
                 var conexao = _dbConnectionFactory.CriarConexao();
                 string query = "update turma " +
-                    "set curso_id = @Curso_id, turma = @turma, ano = @ano" +
+                    "set curso_id = @curso_id, turma = @turma, ano = @ano" +
                     " where id = @id";
                 var retorno = conexao.Execute(query, turma);
                 if (retorno < 0)

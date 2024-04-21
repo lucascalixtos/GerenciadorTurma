@@ -21,15 +21,7 @@ namespace GerenciadorTurma.Controllers
         [HttpPost("CriarTurma")]
         public IActionResult CriarTurma(Turma Turma)
         {
-            try
-            {
-                _turmaService.CriarTurma(Turma);
-                return Ok();
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
+            return Ok(_turmaService.CriarTurma(Turma));
         }
 
         [HttpGet("BuscarTurma")]
@@ -41,8 +33,7 @@ namespace GerenciadorTurma.Controllers
         [HttpDelete("ApagarTurma")]
         public IActionResult ApagarTurma(int id)
         {
-            _turmaService.DeletarTurma(id);
-            return Ok();
+            return Ok(_turmaService.DeletarTurma(id));
         }
 
         [HttpPut("EditarTurma")]
@@ -69,7 +60,7 @@ namespace GerenciadorTurma.Controllers
             return Ok(_turmaService.RemoverAlunoDeTurma(idAluno, idTurma));
         }
 
-        [HttpGet("buscarAlunosEmTurma")]
+        [HttpGet("BuscarAlunosEmTurma")]
         public IActionResult buscarAlunosEmTurma(int idTurma)
         {
             return Ok(_turmaService.buscarAlunosEmTurma(idTurma));

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GerenciadorTurma.Service.Aluno.DTOs
 {
-    public class EditarAlunoRequest
+    public class AlunoDto
     {
         [Required]
         public int Id { get; set; }

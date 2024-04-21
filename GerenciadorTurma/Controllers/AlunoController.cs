@@ -43,7 +43,7 @@ namespace GerenciadorTurma.Controllers
         }
 
         [HttpPut("EditarAluno")]
-        public IActionResult EditarAluno(EditarAlunoRequest aluno)
+        public IActionResult EditarAluno(AlunoDto aluno)
         {
             return Ok(_alunoService.EditarAluno(aluno));
         }

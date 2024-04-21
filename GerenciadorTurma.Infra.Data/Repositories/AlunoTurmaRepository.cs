@@ -4,6 +4,7 @@ using GerenciadorTurma.Domain.Interfaces.Data.Repositories;
 using GerenciadorTurma.Domain.Interfaces.Infra;
 using GerenciadorTurma.Infra.CrossCutting.Exceptions;
 using GerenciadorTurma.Service.Aluno.DTOs;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -85,7 +86,7 @@ namespace GerenciadorTurma.Infra.Data.Repositories
             }
         }
 
-        public List<EditarAlunoRequest> buscarAlunosEmTurma(int idTurma)
+        public List<AlunoDto> buscarAlunosEmTurma(int idTurma)
         {
             try
             {
@@ -93,10 +94,36 @@ namespace GerenciadorTurma.Infra.Data.Repositories
                 string query = " SELECT aluno.id, nome, usuario " +
                     "FROM aluno INNER JOIN aluno_turma ON aluno.id = aluno_turma.aluno_id " +
                     "INNER JOIN turma ON aluno_turma.turma_id = turma.id WHERE turma.id = @idTurma";
-                return conexao.Query<EditarAlunoRequest>(query, new { idTurma = idTurma }).ToList();
+                return conexao.Query<AlunoDto>(query, new { idTurma = idTurma }).ToList();
             }
             catch (Exception)
             {
+                throw;
+            }
+
+        }
+
+        public List<AlunoDto> ObterAlunosForaDaTurma(int idturma)
+        {
+            try
+            {
+                var conexao = _connectionFactory.CriarConexao();
+
+                string query = @"
+                select *
+                from aluno
+                where id not in (
+                    select aluno_id
+                    from aluno_turma
+                    where turma_id = @idTurma
+                )";
+
+                return conexao.Query<AlunoDto>(query, new { idTurma = idturma }).ToList();
+
+            }
+            catch (Exception)
+            {
+
                 throw;
             }
 

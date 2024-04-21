@@ -63,6 +63,10 @@ namespace GerenciadorTurma.Infra.Data.Repositories
             try
             {
                 var conexao = _dbConnectionFactory.CriarConexao();
+
+                string queryAlunoTurma = "delete from aluno_turma where aluno_id=@id";
+                conexao.Execute(queryAlunoTurma, new { Id = id });
+
                 string query = "delete from aluno where Id=@id";
                 var retorno = conexao.Execute(query, new { Id = id });
                 if (retorno < 0)
@@ -93,7 +97,7 @@ namespace GerenciadorTurma.Infra.Data.Repositories
             }
         }
 
-        public bool EditarAluno(EditarAlunoRequest aluno)
+        public bool EditarAluno(AlunoDto aluno)
         {
             try
             {

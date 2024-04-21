@@ -36,7 +36,7 @@ namespace GerenciadorTurma.Service
         {
             return _alunoRepository.BuscarTodosAlunos();
         }
-        public bool EditarAluno(EditarAlunoRequest aluno)
+        public bool EditarAluno(AlunoDto aluno)
         {
             return _alunoRepository.EditarAluno(aluno);
         }
