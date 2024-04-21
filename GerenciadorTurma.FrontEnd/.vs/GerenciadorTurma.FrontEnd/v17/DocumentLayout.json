@@ -1,0 +1,377 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\GerenciadorTurma.FrontEnd.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\GerenciadorTurma.FrontEnd.csproj|solutionrelative:webapplication2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\views\\alunos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\alunos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\views\\alunos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\alunos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\views\\turmas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\turmas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\views\\alunos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\alunos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\views\\alunos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\alunos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\views\\alunos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\alunos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\views\\turmas\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\turmas\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\views\\turmas\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\turmas\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\views\\turmas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\turmas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\views\\turmas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\turmas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\controllers\\alunoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\alunoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\views\\turmas\\listaalunosturma.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\turmas\\listaalunosturma.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\data\\turmaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\data\\turmaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\controllers\\turmascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\turmascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\models\\interfaces\\iturmaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\interfaces\\iturmaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|c:\\users\\calixto\\source\\repos\\gerenciadorturma.frontend\\webapplication2\\models\\alunoturma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD6978B-E03B-423C-8416-1BE4AAEAC223}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\alunoturma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TurmaService.cs",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Data\\TurmaService.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Data\\TurmaService.cs",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Data\\TurmaService.cs",
+              "RelativeToolTip": "WebApplication2\\Data\\TurmaService.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAqwHYAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T15:55:52.016Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TurmasController.cs",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Controllers\\TurmasController.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\TurmasController.cs",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Controllers\\TurmasController.cs",
+              "RelativeToolTip": "WebApplication2\\Controllers\\TurmasController.cs",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAqwJEAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T15:55:46.856Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Program.cs",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Program.cs",
+              "RelativeToolTip": "WebApplication2\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T17:34:11.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Alunos\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Alunos\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Alunos\\Edit.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Alunos\\Edit.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T17:14:05.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Alunos\\Details.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Alunos\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Alunos\\Details.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Alunos\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T17:13:56.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Alunos\\Delete.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Alunos\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Alunos\\Delete.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Alunos\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T17:13:48.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Alunos\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Alunos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Alunos\\Create.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Alunos\\Create.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T17:13:41.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Turmas\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Turmas\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Turmas\\Create.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Turmas\\Create.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T17:13:28.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Turmas\\Delete.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Turmas\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Turmas\\Delete.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Turmas\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T17:12:57.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Alunos\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Alunos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Alunos\\Index.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Alunos\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB8AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T16:11:34.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Turmas\\Details.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Turmas\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Turmas\\Details.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Turmas\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T17:12:48.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Turmas\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Turmas\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Turmas\\Edit.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Turmas\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T17:12:39.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebApplication2\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAiwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T17:10:38.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T17:09:01.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AlunoTurma.cs",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Models\\AlunoTurma.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\AlunoTurma.cs",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Models\\AlunoTurma.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\AlunoTurma.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:35:14.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AlunosController.cs",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Controllers\\AlunosController.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\AlunosController.cs",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Controllers\\AlunosController.cs",
+              "RelativeToolTip": "WebApplication2\\Controllers\\AlunosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:30:59.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Turmas\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Turmas\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Turmas\\Index.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Turmas\\Index.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACkAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T15:57:45.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T17:08:56.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ITurmaService.cs",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Models\\Interfaces\\ITurmaService.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\Interfaces\\ITurmaService.cs",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Models\\Interfaces\\ITurmaService.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\Interfaces\\ITurmaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:41:18.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T17:08:52.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ListaAlunosTurma.cshtml",
+              "DocumentMoniker": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Turmas\\ListaAlunosTurma.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Turmas\\ListaAlunosTurma.cshtml",
+              "ToolTip": "C:\\Users\\Calixto\\source\\repos\\GerenciadorTurma.FrontEnd\\WebApplication2\\Views\\Turmas\\ListaAlunosTurma.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Turmas\\ListaAlunosTurma.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAEkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T15:57:41.742Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

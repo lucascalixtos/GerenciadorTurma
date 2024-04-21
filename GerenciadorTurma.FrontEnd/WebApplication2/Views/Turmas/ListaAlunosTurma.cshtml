@@ -1,0 +1,107 @@
+﻿@model GerenciadorTurma.FrontEnd.Models.AlunoTurma
+
+@{
+    ViewData["Title"] = "Turma";
+}
+
+<h1>Turma @Model.Turma.turma.ToString()</h1>
+
+<p>Turma</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Turma.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Turma.turma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Turma.Curso_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Turma.Ano)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Turma.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Turma.turma)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Turma.Curso_id)
+            </td>
+             <td>
+                  @Html.DisplayNameFor(model => model.Turma.Ano)
+            </td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<p>Alunos cadastrados</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               Nome
+            </th>
+            <th>
+                Usuario
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Alunos) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuario)
+            </td>
+            <td>
+              <a asp-action="RemoverAlunoDeTurma" asp-route-idAluno="@item.Id" asp-route-idTurma="@Model.Turma.Id">Remover da turma</a> |
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<p>Alunos não cadastrados</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nome
+            </th>
+            <th>
+                Usuario
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.AlunosForaDaTurma)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Usuario)
+                </td>
+                <td>
+                    <a asp-action="AdicionarAlunoaTurma" asp-route-idAluno="@item.Id" asp-route-idTurma="@Model.Turma.Id">Adicionar a turma</a> |
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
