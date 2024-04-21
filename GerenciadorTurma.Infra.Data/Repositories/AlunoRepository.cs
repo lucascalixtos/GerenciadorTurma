@@ -8,6 +8,7 @@ using Dapper;
 using GerenciadorTurma.Domain.Entities;
 using GerenciadorTurma.Domain.Interfaces.Data.Repositories;
 using GerenciadorTurma.Domain.Interfaces.Infra;
+using GerenciadorTurma.Infra.CrossCutting.Exceptions;
 using GerenciadorTurma.Service.Aluno.DTOs;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -36,13 +37,20 @@ namespace GerenciadorTurma.Infra.Data.Repositories
             }
         }
 
-        public  void CriarAluno(Aluno aluno)
+        public  bool CriarAluno(Aluno aluno)
         {
             try
             {
                 var conexao = _dbConnectionFactory.CriarConexao();
                 string query = "insert into aluno values(@nome, @usuario, @senha)";
                 var retorno = conexao.Execute(query, aluno);
+                if (retorno < 0)
+                    throw new ErroCriacaoException("Criar");
+                return true;
+            }
+            catch (ErroCriacaoException ex)
+            {
+                throw ex;
             }
             catch (Exception e)
             {
@@ -50,13 +58,20 @@ namespace GerenciadorTurma.Infra.Data.Repositories
             }
         }
 
-        public Aluno DeletarAluno(int id)
+        public bool DeletarAluno(int id)
         {
             try
             {
                 var conexao = _dbConnectionFactory.CriarConexao();
                 string query = "delete from aluno where Id=@id";
-                return conexao.Query<Aluno>(query, new { Id = id }).FirstOrDefault();
+                var retorno = conexao.Execute(query, new { Id = id });
+                if (retorno < 0)
+                    throw new ErroCriacaoException("Deletar");
+                return true;
+            }
+            catch (ErroCriacaoException ex)
+            {
+                throw ex;
             }
             catch (Exception e)
             {
@@ -78,7 +93,7 @@ namespace GerenciadorTurma.Infra.Data.Repositories
             }
         }
 
-        public void EditarAluno(EditarAlunoRequest aluno)
+        public bool EditarAluno(EditarAlunoRequest aluno)
         {
             try
             {
@@ -87,6 +102,13 @@ namespace GerenciadorTurma.Infra.Data.Repositories
                     "set nome = @nome, usuario = @usuario" +
                     " where id = @id";
                 var retorno = conexao.Execute(query, aluno);
+                if (retorno < 0)
+                    throw new ErroCriacaoException("Editar");
+                return true;
+            }
+            catch (ErroCriacaoException ex)
+            {
+                throw ex;
             }
             catch (Exception e)
             {

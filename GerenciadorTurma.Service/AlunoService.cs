@@ -21,24 +21,24 @@ namespace GerenciadorTurma.Service
             return _alunoRepository.BuscarAluno(id);
         }
 
-        public void CriarAluno(Domain.Entities.Aluno aluno)
+        public bool CriarAluno(Domain.Entities.Aluno aluno)
         {
             aluno.senha = CriptografarSenha(aluno.senha);
-            _alunoRepository.CriarAluno(aluno);
+            return _alunoRepository.CriarAluno(aluno);
         }
 
-        public Domain.Entities.Aluno DeletarAluno(int id)
+        public bool DeletarAluno(int id)
         {
-            return _alunoRepository.DeletarAluno(id);
+             return _alunoRepository.DeletarAluno(id);
         }
 
         public List<Domain.Entities.Aluno> BuscarTodosAlunos()
         {
             return _alunoRepository.BuscarTodosAlunos();
         }
-        public void EditarAluno(EditarAlunoRequest aluno)
+        public bool EditarAluno(EditarAlunoRequest aluno)
         {
-            _alunoRepository.EditarAluno(aluno);
+            return _alunoRepository.EditarAluno(aluno);
         }
 
         private string CriptografarSenha(string senha)

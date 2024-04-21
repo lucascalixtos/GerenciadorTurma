@@ -10,10 +10,11 @@ namespace GerenciadorTurma.Domain.Interfaces.Data.Repositories
 {
     public interface ITurmaRepository
     {
-        void CriarTurma(Turma aluno);
-        Aluno BuscarTurma(int id);
-        Aluno DeletarTurma(int id);
-        void EditarTurma(EditarTurmaRequest aluno);
+        bool CriarTurma(Turma turma);
+        Turma BuscarTurma(int id);
+        bool DeletarTurma(int id);
+        bool EditarTurma(EditarTurmaRequest turma);
         List<Turma> BuscarTodasTurmas();
+        bool ValidarAno(int ano);
     }
 }

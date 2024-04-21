@@ -24,6 +24,8 @@ builder.Services.AddTransient<IAlunoService, AlunoService>();
 builder.Services.AddTransient<ITurmaRepository, TurmaRepository>();
 builder.Services.AddTransient<ITurmaService, TurmaService>();
 
+builder.Services.AddTransient<IAlunoTurmaRepository, AlunoTurmaRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -33,7 +35,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-//app.UseMiddleware(typeof(GerarErrosMiddleware));
+app.UseMiddleware(typeof(GerarErrosMiddleware));
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

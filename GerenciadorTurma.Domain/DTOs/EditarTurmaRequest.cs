@@ -11,8 +11,8 @@ namespace GerenciadorTurma.Service.Aluno.DTOs
     {
         [Required]
         public int Id { get; set; }
-        public string Curso_id { get; set; }
+        public int Curso_id { get; set; }
         public string Turma { get; set; }
-        public string Ano { get; set; }
+        public int Ano { get; set; }
     }
 }

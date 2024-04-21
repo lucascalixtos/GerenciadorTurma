@@ -10,10 +10,13 @@ namespace GerenciadorTurma.Domain.Interfaces.Services
 {
     public interface ITurmaService
     {
-        void CriarTurma(Turma aluno);
-        Aluno BuscarTurma(int id);
-        Aluno DeletarTurma(int id);
-        void EditarTurma(EditarTurmaRequest aluno);
+        bool CriarTurma(Turma turma);
+        Turma BuscarTurma(int id);
+        bool DeletarTurma(int id);
+        bool EditarTurma(EditarTurmaRequest turma);
         List<Turma> BuscarTodasTurmas();
+        bool AdicionarAlunoaTurma(int idAluno, int idTurma);
+        bool RemoverAlunoDeTurma(int idAluno, int idTurma);
+        List<EditarAlunoRequest> buscarAlunosEmTurma(int idTurma);
     }
 }

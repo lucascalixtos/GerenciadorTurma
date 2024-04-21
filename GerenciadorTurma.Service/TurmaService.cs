@@ -1,36 +1,60 @@
 ﻿using GerenciadorTurma.Domain.Entities;
+using GerenciadorTurma.Domain.Interfaces.Data.Repositories;
 using GerenciadorTurma.Domain.Interfaces.Services;
+using GerenciadorTurma.Infra.Data.Repositories;
 using GerenciadorTurma.Service.Aluno.DTOs;
 using System;
 
 public class TurmaService: ITurmaService
 {
-	public TurmaService()
+    private readonly ITurmaRepository _turmaRepository;
+    private readonly IAlunoTurmaRepository _alunoTurmaRepository;
+    public TurmaService(ITurmaRepository turmaRepository, IAlunoTurmaRepository alunoTurmaRepository)
 	{
+        _turmaRepository = turmaRepository;
+        _alunoTurmaRepository = alunoTurmaRepository;
 	}
 
     public List<Turma> BuscarTodasTurmas()
     {
-        throw new NotImplementedException();
+        return _turmaRepository.BuscarTodasTurmas();
     }
 
-    public Aluno BuscarTurma(int id)
+    public Turma BuscarTurma(int id)
     {
-        throw new NotImplementedException();
+        return _turmaRepository.BuscarTurma(id);
     }
 
-    public void CriarTurma(Turma aluno)
+    public bool CriarTurma(Turma turma)
     {
-        throw new NotImplementedException();
+        _turmaRepository.ValidarAno(turma.Ano);
+        return _turmaRepository.CriarTurma(turma);
     }
 
-    public Aluno DeletarTurma(int id)
+    public bool DeletarTurma(int id)
     {
-        throw new NotImplementedException();
+        return _turmaRepository.DeletarTurma(id);
     }
 
-    public void EditarTurma(EditarTurmaRequest aluno)
+    public bool EditarTurma(EditarTurmaRequest turma)
     {
-        throw new NotImplementedException();
+        _turmaRepository.ValidarAno(turma.Ano);
+        return _turmaRepository.EditarTurma(turma);
+    }
+
+    public bool AdicionarAlunoaTurma(int idAluno, int idTurma)
+    {
+        _alunoTurmaRepository.VerificarSeAlunoEstaNaTurma(idAluno, idTurma);
+        return _alunoTurmaRepository.AdicionarAlunoaTurma(idAluno, idTurma);
+    }
+
+    public bool RemoverAlunoDeTurma(int idAluno, int idTurma)
+    {
+        return _alunoTurmaRepository.RemoverAlunoDeTurma(idAluno, idTurma);
+    }
+
+   public List<EditarAlunoRequest> buscarAlunosEmTurma(int idTurma)
+    {
+        return _alunoTurmaRepository.buscarAlunosEmTurma(idTurma);
     }
 }

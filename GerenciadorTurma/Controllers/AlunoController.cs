@@ -21,12 +21,10 @@ namespace GerenciadorTurma.Controllers
         {
             try
             {
-                _alunoService.CriarAluno(aluno);
-                return Ok();
+                return Ok(_alunoService.CriarAluno(aluno));
             }
             catch (Exception e)
             {
-
                 throw;
             }
      
@@ -44,11 +42,10 @@ namespace GerenciadorTurma.Controllers
             return Ok(_alunoService.DeletarAluno(id));
         }
 
-        [HttpDelete("EditarAluno")]
+        [HttpPut("EditarAluno")]
         public IActionResult EditarAluno(EditarAlunoRequest aluno)
         {
-            _alunoService.EditarAluno(aluno);
-            return Ok();
+            return Ok(_alunoService.EditarAluno(aluno));
         }
 
         [HttpGet("BuscarTodosAlunos")]
